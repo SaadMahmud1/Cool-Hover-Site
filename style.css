@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Source Code Pro" , monospace;
+}
+
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0e0e0e;
+}
+
+.numbers{
+    position: relative;
+    cursor:default;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.numbers span{
+    position:relative;
+    font-size: 3em;
+    color: rgba(255,255,255,0.5);
+    font-weight: 900;
+    transition: 1s;
+    user-select: none;
+
+}
+
+.numbers span:hover{
+    transition: 0s;
+    color:#fff;
+    text-shadow: 0 0 10px #0f0,
+    0 0 20px #0f0,
+    0 0 40px #0f0,
+    0 0 80px #0f0,
+    0 0 160px #0f0;
+
+    z-index: 1000;
+
+
+}
